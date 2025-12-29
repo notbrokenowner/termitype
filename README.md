@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ### Basic usage
 
 ```bash
-python typing_test.py
+python termitype_cli.py
 ```
 
 This will use the default language (english) with 25 words.
@@ -39,16 +39,16 @@ This will use the default language (english) with 25 words.
 
 ```bash
 # Test with a specific language
-python typing_test.py -l english
+python termitype_cli.py -l english
 
 # Test with 50 words
-python typing_test.py -w 50
+python termitype_cli.py -w 50
 
 # Combination of parameters
-python typing_test.py -l english -w 30
+python termitype_cli.py -l english -w 30
 
 # List all available languages
-python typing_test.py --list-languages
+python termitype_cli.py --list-languages
 ```
 
 ### Command line parameters
@@ -82,8 +82,8 @@ Languages are stored as JSON files in the `languages/` directory. Each language 
 
 1. Create a new JSON file in the `languages/` directory (e.g., `languages/russian.json`)
 2. Add the language data following the structure above
-3. Run `python typing_test.py --list-languages` to verify it's loaded
-4. Use it with `python typing_test.py -l russian`
+3. Run `python termitype_cli.py --list-languages` to verify it's loaded
+4. Use it with `python termitype_cli.py -l russian`
 
 ## Controls
 
